@@ -3,7 +3,7 @@ game 'gta5'
 lua54 'yes'
 author 'Jayson Liu'
 description '小偷插件（盗窃快递包裹）'
-version '1.0.0'
+version '1.0.1'
 
 shared_scripts {
     'locales/cn.lua',
@@ -26,4 +26,10 @@ files {
     'images/*.png',
 }
 
-dependency 'qb-target'
+dependencies {
+    'qb-core',
+    'qb-target',
+    'qb-radialmenu',
+    'qb-inventory',
+    'ox_lib'
+}
